@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using ASP_MVC_Movies.Models;
 
 namespace ASP_MVC_Movies.Data
 {
@@ -12,5 +13,6 @@ namespace ASP_MVC_Movies.Data
             : base(options)
         {
         }
+        public DbSet<Movie> Movie { get; set; }
     }
 }
